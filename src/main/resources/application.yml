@@ -1,0 +1,16 @@
+server:
+  port: 5555     #端口号
+spring:
+  activemq:
+    broker-url: tcp://192.168.1.18:61616     #服务器地址
+  jms:
+    pub-sub-domain: true    #false代表队列   true代表主题
+
+
+#自定义队列名
+myqueue: boot_mq_queue
+
+#自定义主题名
+mytopic: boot_mq_topic
+
+
